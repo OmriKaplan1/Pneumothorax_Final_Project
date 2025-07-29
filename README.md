@@ -8,6 +8,28 @@ It includes:
 - Code for training and evaluating both models
 
 ---
+## 📋 Workflow Overview
+
+> ⚠️ To run the full system (GUI + models), follow these steps in order:
+
+1. **Download the dataset**  
+   - [Pneumothorax Chest X-ray Images and Masks (Kaggle)](https://www.kaggle.com/datasets/vbookshelf/pneumothorax-chest-xray-images-and-masks)  
+   - Unzip and place in a known directory
+
+2. **Train the models**  
+   - Use `xception_train.py` to train the classification model  
+   - Use `segmentation_final.py` to train the segmentation model  
+   - Models will be saved as `.keras` or `.h5` files
+
+3. **Update model paths in the GUI code**  
+   - Open `SmartDoc2.py`  
+   - Set the correct file paths to your trained models
+
+4. **Run the GUI**  
+   - Launch the app with `python SmartDoc2.py`  
+   - Upload X-ray images and get classification + segmentation results
+
+---
 
 ## 📦 Repository Structure
 ├── SmartDoc2.py # GUI application
